@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://clinic-backend-production-7812.up.railway.app",
+  baseURL: "clinic-frontend-git-main-kumuthapriya-ds-projects.vercel.app",
 });
 
 export default API;
