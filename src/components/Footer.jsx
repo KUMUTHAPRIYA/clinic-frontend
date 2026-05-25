@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
-
     <footer className="bg-blue-600 text-white py-6 mt-1">
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
-        {/* Left Side */}
         <div>
           <h1 className="text-2xl font-bold">
             Clinic Appointment System
@@ -16,24 +16,22 @@ function Footer() {
           </p>
         </div>
 
-        {/* Center Links */}
         <div className="flex gap-6 font-medium">
 
-          <a href="/" className="hover:text-black">
+          <Link to="/" className="hover:text-black">
             Home
-          </a>
+          </Link>
 
-          <a href="/doctors" className="hover:text-black">
+          <Link to="/doctors" className="hover:text-black">
             Doctors
-          </a>
+          </Link>
 
-          <a href="/reviews" className="hover:text-black">
+          <Link to="/reviews" className="hover:text-black">
             Reviews
-          </a>
+          </Link>
 
         </div>
 
-        {/* Right Side */}
         <div className="text-sm text-gray-200">
           ©Clinic Appointment and Review System 2026 All Rights Reserved
         </div>
@@ -41,7 +39,6 @@ function Footer() {
       </div>
 
     </footer>
-
   );
 }
 
